@@ -36,3 +36,5 @@ The original field dataset is **not included in this repository** because the fi
 ## Data Availability
 
 Large satellite imagery files are not included in this repository. The repository documents the data source and processing workflow instead.
+
+<!-- duplicate copy - to be removed -->
