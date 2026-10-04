@@ -20,6 +20,7 @@ The workflow involved satellite image preparation, training-data generation, sup
 ## Study Area
 
 The study focuses on the Dehradun region of Uttarakhand, India, along with the defined surrounding study region.
+
 ![Study area](results/01_study_area.png)
 
 ## Data
@@ -32,14 +33,17 @@ The study focuses on the Dehradun region of Uttarakhand, India, along with the d
 - **Spatial coverage:** approximately 30 km × 30 km
 - **Spectral information:** VNIR and SWIR hyperspectral bands
 - **Data access:** EOWEB GeoPortal
-  ![EnMAP true colour composite](results/02_enmap_true_color.png)
+
+![EnMAP true colour composite](results/02_enmap_true_color.png)
 
 ### Training data
 
 Training samples were prepared for six land-cover classes. Candidate training points were initially generated using Google Earth Engine and subsequently reviewed and filtered in QGIS.
 
 The final training dataset contained **327 samples**.
+
 ![Training points](results/03_training_points.png)
+
 ![Training dataset in EnMAP-Box](results/04_training_dataset.png)
 
 ## Methodology
