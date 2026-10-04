@@ -2,7 +2,7 @@
 
 This folder contains selected figures and outputs from the internship project.
 
-The results include the study area, training samples, EnMAP imagery, final classification map, and accuracy assessment.
+The results include the study area, EnMAP true-color visualization, training samples, final classification map, and accuracy assessment.
 
 ## Classification Result
 
