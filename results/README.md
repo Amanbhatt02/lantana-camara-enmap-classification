@@ -15,6 +15,8 @@ The final classification distinguishes six classes:
 - Grassland
 - *Lantana camara*
 
+Land-cover statistics were derived from the final classified raster and summarized as class-wise area and percentage.
+
 ## Accuracy
 
 The final classification achieved an overall accuracy of **94.47%**, with **410 out of 434 reference samples correctly classified**.
