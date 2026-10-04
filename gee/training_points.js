@@ -2,6 +2,7 @@
 // Internship project: Mapping Invasive Lantana camara with EnMAP Hyperspectral Imagery
 // FRI Dehradun
 
+// Define study region
 // First polygon
 var geometry1 = ee.Geometry.Polygon([
   [ [77.81, 30.42],
@@ -22,11 +23,11 @@ var geometry2 = ee.Geometry.Polygon([
 
 Map.addLayer(geometry2, {color: 'black'}, 'Polygon 2');
 
-// Center the map (optional – we can use the first polygon or a merged version)
+// Center the map
 Map.centerObject(geometry1, 10);
-
+// Merge training points 
 var training = water.merge(forest).merge(urban).merge(agriculture).merge(grassland)
-
+// Export training points to process in QGIS
 Export.table.toDrive({
   collection: training,
   description: 'training',
