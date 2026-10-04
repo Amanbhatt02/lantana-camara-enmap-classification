@@ -59,17 +59,6 @@ The main workflow consisted of:
 7. Producing the final land-cover classification.
 8. Evaluating classification accuracy using reference samples.
 
-## Classification
-
-A Random Forest classifier was used with the following main parameters:
-
-- Number of trees: 100
-- Criterion: Gini
-- Maximum features: sqrt
-- Minimum samples split: 2
-- Minimum samples leaf: 1
-- Cross-validation folds: 10
-
 ## Classification Method
 
 A supervised Random Forest classifier was used to classify the EnMAP hyperspectral imagery into six land-cover classes.
@@ -125,7 +114,7 @@ The classified study region includes forest, urban areas, agriculture, grassland
 - Google Earth Engine
 - QGIS
 - EnMAP-Box
-- Python
+- JavaScript
 - Random Forest
 
 ## Acknowledgements
