@@ -1,6 +1,8 @@
 # Mapping Invasive *Lantana camara* with EnMAP Hyperspectral Imagery
 
-This project documents my work on mapping the invasive plant species *Lantana camara* in the Dehradun region of Uttarakhand, India, using hyperspectral satellite imagery and machine learning.
+This project documents my internship work on mapping the invasive plant species *Lantana camara* in the Dehradun region of Uttarakhand, India, using EnMAP hyperspectral satellite imagery and machine learning.
+
+The workflow combines hyperspectral image processing, Google Earth Engine (GEE) for training-data preparation, QGIS/EnMAP-Box for classification, and a Random Forest (RF) classifier.
 
 ## Overview
 
@@ -18,6 +20,7 @@ The workflow involved satellite image preparation, training-data generation, sup
 ## Study Area
 
 The study focuses on the Dehradun region of Uttarakhand, India, along with the defined surrounding study region.
+![Study area](results/01_study_area.png)
 
 ## Data
 
@@ -29,12 +32,15 @@ The study focuses on the Dehradun region of Uttarakhand, India, along with the d
 - **Spatial coverage:** approximately 30 km × 30 km
 - **Spectral information:** VNIR and SWIR hyperspectral bands
 - **Data access:** EOWEB GeoPortal
+  ![EnMAP true colour composite](results/02_enmap_true_color.png)
 
 ### Training data
 
 Training samples were prepared for six land-cover classes. Candidate training points were initially generated using Google Earth Engine and subsequently reviewed and filtered in QGIS.
 
 The final training dataset contained **327 samples**.
+![Training points](results/03_training_points.png)
+![Training dataset in EnMAP-Box](results/04_training_dataset.png)
 
 ## Methodology
 
@@ -67,22 +73,29 @@ The final classification achieved:
 - **Overall accuracy:** 94.47%
 - **Correctly classified samples:** 410
 - **Reference/validation samples:** 434
+- **Training samples:** 327
 
 The classification was performed for six classes, including *Lantana camara*.
+
+## Final Classification Map
+
+The final supervised classification map shows the spatial distribution of the six land-cover classes, including *Lantana camara*, across the study region.
+
+![Final classification map](results/05_classification_map.png)
 
 ## Tools
 
 - Google Earth Engine
 - QGIS
 - EnMAP-Box
-- Python / Machine Learning
+- Python
 - Random Forest
 
 ## Acknowledgements
 
 This work was carried out during an internship at the Forest Research Institute (FRI), Dehradun.
 
-Ground observations used for *Lantana camara* were derived from field data provided through the Centre of Excellence for Sustainable Land Management (CoE-SLM).
+Ground observations used for *Lantana camara* were derived from field data provided through the Centre of Excellence for Sustainable Land Management (CoE-SLM) at (FRI) Dehradun.
 
 ## Note
 
