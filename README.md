@@ -70,6 +70,21 @@ A Random Forest classifier was used with the following main parameters:
 - Minimum samples leaf: 1
 - Cross-validation folds: 10
 
+## Classification Method
+
+A supervised Random Forest classifier was used to classify the EnMAP hyperspectral imagery into six land-cover classes.
+
+The classifier was configured with:
+
+- **Number of trees:** 100
+- **Criterion:** Gini
+- **Maximum features:** sqrt
+- **Minimum samples split:** 2
+- **Minimum samples leaf:** 1
+- **Cross-validation:** 10-fold
+
+The final training dataset contained **327 labelled samples** across the six classes.
+
 ## Results
 
 The final classification achieved:
@@ -80,6 +95,18 @@ The final classification achieved:
 - **Training samples:** 327
 
 The classification was performed for six classes, including *Lantana camara*.
+
+### Class-wise Results
+
+| Class | Reference Samples | Correctly Classified |
+|---|---:|---:|
+| Water | 49 | 47 |
+| Forest | 106 | 100 |
+| Urban | 76 | 72 |
+| Agriculture | 89 | 84 |
+| Grassland | 47 | 44 |
+| *Lantana camara* | 67 | 63 |
+| **Total** | **434** | **410** |
 
 ## Final Classification Map
 
