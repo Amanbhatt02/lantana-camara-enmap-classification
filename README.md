@@ -87,6 +87,12 @@ The final supervised classification map shows the spatial distribution of the si
 
 ![Final classification map](results/05_classification_map.png)
 
+### Land-Cover Distribution
+
+The classified study region includes forest, urban areas, agriculture, grassland, water bodies, and *Lantana camara*.
+
+![Land-cover statistics](results/06_land_cover_statistics.png)
+
 ## Tools
 
 - Google Earth Engine
